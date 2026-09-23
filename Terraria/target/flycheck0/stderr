@@ -1,0 +1,246 @@
+   0.048269200s  INFO prepare_target{force=false package_id=Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria) target="Terraria"}: cargo::core::compiler::fingerprint: fingerprint error for Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria)/Check { test: false }/TargetInner { name: "Terraria", doc: true, ..: with_path("C:\\Users\\gianc\\Downloads\\Raycasting-Proyecto2\\Terraria\\src\\main.rs", Edition2024) }
+   0.048324100s  INFO prepare_target{force=false package_id=Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria) target="Terraria"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\Terraria-a495631dfe280827\bin-Terraria`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.056270900s  INFO prepare_target{force=false package_id=raylib v6.0.0 target="raylib"}: cargo::core::compiler::fingerprint: fingerprint error for raylib v6.0.0/Check { test: false }/TargetInner { ..: lib_target("raylib", ["lib"], "C:\\Users\\gianc\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\raylib-6.0.0\\src\\lib.rs", Edition2024) }
+   0.056316500s  INFO prepare_target{force=false package_id=raylib v6.0.0 target="raylib"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\raylib-38b2e93ad41ef8e1\lib-raylib`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.056860100s  INFO prepare_target{force=false package_id=raylib-sys v6.0.0 target="raylib_sys"}: cargo::core::compiler::fingerprint: fingerprint error for raylib-sys v6.0.0/Check { test: false }/TargetInner { ..: lib_target("raylib_sys", ["lib"], "C:\\Users\\gianc\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\raylib-sys-6.0.0\\src\\lib.rs", Edition2024) }
+   0.056872500s  INFO prepare_target{force=false package_id=raylib-sys v6.0.0 target="raylib_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\raylib-sys-a719c532a300a624\lib-raylib_sys`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.057669700s  INFO prepare_target{force=false package_id=raylib-sys v6.0.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for raylib-sys v6.0.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "C:\\Users\\gianc\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\raylib-sys-6.0.0\\build.rs", Edition2024) }
+   0.057682600s  INFO prepare_target{force=false package_id=raylib-sys v6.0.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\raylib-sys-0d91aa0d1bda0626\run-build-script-build-script-build`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.067313400s  INFO prepare_target{force=false package_id=thiserror v2.0.20 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.20/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "C:\\Users\\gianc\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\thiserror-2.0.20\\src\\lib.rs", Edition2021) }
+   0.067331000s  INFO prepare_target{force=false package_id=thiserror v2.0.20 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\thiserror-97897bd71fd3e1d3\lib-thiserror`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.069100300s  INFO prepare_target{force=false package_id=Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria) target="Terraria"}: cargo::core::compiler::fingerprint: fingerprint error for Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria)/Check { test: true }/TargetInner { name: "Terraria", doc: true, ..: with_path("C:\\Users\\gianc\\Downloads\\Raycasting-Proyecto2\\Terraria\\src\\main.rs", Edition2024) }
+   0.069135500s  INFO prepare_target{force=false package_id=Terraria v0.1.0 (C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria) target="Terraria"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\.fingerprint\Terraria-7053b2ce97457472\test-bin-Terraria`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking thiserror v2.0.20
+   Compiling raylib-sys v6.0.0
+error: failed to run custom build command for `raylib-sys v6.0.0`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `C:\Users\gianc\Downloads\Raycasting-Proyecto2\Terraria\target\debug\build\raylib-sys-1af55e53c15a5f4e\build-script-build` (exit code: 101)
+  --- stdout
+  cargo:rerun-if-changed=build.rs
+  cargo:rerun-if-changed=binding/binding.h
+  CMAKE_TOOLCHAIN_FILE_x86_64-pc-windows-msvc = None
+  CMAKE_TOOLCHAIN_FILE_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_GENERATOR_x86_64-pc-windows-msvc = None
+  CMAKE_GENERATOR_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_GENERATOR = None
+  CMAKE_GENERATOR = None
+  CMAKE_PREFIX_PATH_x86_64-pc-windows-msvc = None
+  CMAKE_PREFIX_PATH_x86_64_pc_windows_msvc = None
+  HOST_CMAKE_PREFIX_PATH = None
+  CMAKE_PREFIX_PATH = None
+  CMAKE_x86_64-pc-windows-msvc = None
+  CMAKE_x86_64_pc_windows_msvc = None
+  HOST_CMAKE = None
+  CMAKE = None
+
+  --- stderr
+  running: "cmake" "C:\\Users\\gianc\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\raylib-sys-6.0.0\\./raylib" "-B" "C:\\Users\\gianc\\Downloads\\Raycasting-Proyecto2\\Terraria\\target\\debug\\build\\raylib-sys-0d91aa0d1bda0626\\out\\build" "-G" "Visual Studio 17 2022" "-Thost=x64" "-Ax64" "-DCMAKE_BUILD_TYPE=Debug" "-DBUILD_EXAMPLES=OFF" "-DCUSTOMIZE_BUILD=ON" "-DENABLE_ASAN=OFF" "-DENABLE_UBSAN=OFF" "-DENABLE_MSAN=OFF" "-DWITH_PIC=OFF" "-DBUILD_SHARED_LIBS=OFF" "-DUSE_EXTERNAL_GLFW=OFF" "-DGLFW_BUILD_WAYLAND=OFF" "-DGLFW_BUILD_X11=ON" "-DINCLUDE_EVERYTHING=OFF" "-DUSE_AUDIO=ON" "-DSUPPORT_MODULE_RSHAPES=ON" "-DSUPPORT_MODULE_RTEXTURES=ON" "-DSUPPORT_MODULE_RTEXT=ON" "-DSUPPORT_MODULE_RMODELS=ON" "-DSUPPORT_MODULE_RAUDIO=ON" "-DSUPPORT_BUSY_WAIT_LOOP=OFF" "-DSUPPORT_CAMERA_SYSTEM=ON" "-DSUPPORT_GESTURES_SYSTEM=ON" "-DSUPPORT_RPRAND_GENERATOR=ON" "-DSUPPORT_MOUSE_GESTURES=ON" "-DSUPPORT_SSH_KEYBOARD_RPI=ON" "-DSUPPORT_WINMM_HIGHRES_TIMER=ON" "-DSUPPORT_PARTIALBUSY_WAIT_LOOP=OFF" "-DSUPPORT_COMPRESSION_API=ON" "-DSUPPORT_AUTOMATION_EVENTS=ON" "-DSUPPORT_CUSTOM_FRAME_CONTROL=OFF" "-DSUPPORT_CLIPBOARD_IMAGE=ON" "-DSUPPORT_QUADS_DRAW_MODE=ON" "-DSUPPORT_FILEFORMAT_PNG=ON" "-DSUPPORT_FILEFORMAT_BMP=OFF" "-DSUPPORT_FILEFORMAT_TGA=OFF" "-DSUPPORT_FILEFORMAT_JPG=OFF" "-DSUPPORT_FILEFORMAT_GIF=ON" "-DSUPPORT_FILEFORMAT_QOI=ON" "-DSUPPORT_FILEFORMAT_PSD=OFF" "-DSUPPORT_FILEFORMAT_DDS=ON" "-DSUPPORT_FILEFORMAT_HDR=OFF" "-DSUPPORT_FILEFORMAT_PIC=OFF" "-DSUPPORT_FILEFORMAT_PNM=OFF" "-DSUPPORT_FILEFORMAT_KTX=OFF" "-DSUPPORT_FILEFORMAT_ASTC=OFF" "-DSUPPORT_FILEFORMAT_PKM=OFF" "-DSUPPORT_FILEFORMAT_PVR=OFF" "-DSUPPORT_IMAGE_EXPORT=ON" "-DSUPPORT_IMAGE_GENERATION=ON" "-DSUPPORT_FILEFORMAT_TTF=ON" "-DSUPPORT_FILEFORMAT_FNT=ON" "-DSUPPORT_FILEFORMAT_BDF=OFF" "-DSUPPORT_FILEFORMAT_OBJ=ON" "-DSUPPORT_FILEFORMAT_MTL=ON" "-DSUPPORT_FILEFORMAT_IQM=ON" "-DSUPPORT_FILEFORMAT_GLTF=ON" "-DSUPPORT_FILEFORMAT_VOX=ON" "-DSUPPORT_FILEFORMAT_M3D=ON" "-DSUPPORT_MESH_GENERATION=ON" "-DSUPPORT_GPU_SKINNING=OFF" "-DSUPPORT_FILEFORMAT_WAV=ON" "-DSUPPORT_FILEFORMAT_OGG=ON" "-DSUPPORT_FILEFORMAT_MP3=ON" "-DSUPPORT_FILEFORMAT_QOA=ON" "-DSUPPORT_FILEFORMAT_FLAC=OFF" "-DSUPPORT_FILEFORMAT_XM=ON" "-DSUPPORT_FILEFORMAT_MOD=ON" "-DSUPPORT_TRACELOG=ON" "-DSUPPORT_SCREEN_CAPTURE=ON" "-DPLATFORM=Desktop" "-DCMAKE_INSTALL_PREFIX=C:\\Users\\gianc\\Downloads\\Raycasting-Proyecto2\\Terraria\\target\\debug\\build\\raylib-sys-0d91aa0d1bda0626\\out" "-DCMAKE_C_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_C_FLAGS_DEBUG= -nologo -MD -Brepro -W0" "-DCMAKE_CXX_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_CXX_FLAGS_DEBUG= -nologo -MD -Brepro -W0" "-DCMAKE_ASM_FLAGS= -nologo -MD -Brepro -W0" "-DCMAKE_ASM_FLAGS_DEBUG= -nologo -MD -Brepro -W0"
+
+  thread 'main' (51544) panicked at C:\Users\gianc\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cmake-0.1.58\src\lib.rs:1132:5:
+
+  failed to execute command: program not found
+  is `cmake` not installed?
+
+  build script failed, must exit now
+  stack backtrace:
+     0: std::panicking::panic_handler
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\panicking.rs:689
+     1: core::panicking::panic_fmt
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\core\src\panicking.rs:80
+     2: <cmake::Config>::defined::{closure#0}
+     3: <cmake::Config>::defined::{closure#0}
+     4: <cmake::Config>::build
+     5: RNSNvYNCINvMs6_NtCsgvfGJFcjol4_9hashbrown3rawINtBd_8RawTableTNtNtCsdkPGTeTFVes_5alloc6string6StringuEE25find_or_find_insert_indexNCINvNtBf_3map14equivalent_keyBX_BX_uE0NCINvB28_11make_hasherBX_uNtNtNtCsaZOKLwlFm27_3std4hash6random11RandomStateE0E0INtNtNtCs
+     6: build_script_build::main
+     7: <std::collections::hash::set::Iter<alloc::string::String> as core::iter::traits::iterator::Iterator>::next
+     8: core::ptr::drop_glue::<bindgen::callbacks::DiscoveredItem>
+     9: RINvYINtNtNtNtCsd9eshbB3hfz_4core4iter8adapters3map3MapINtNtNtCsdkPGTeTFVes_5alloc3vec9into_iter8IntoIterNtNtBY_6string6StringENCINvXs8_NtCsgvfGJFcjol4_9hashbrown3setINtB2a_7HashSetB1F_NtNtNtCsaZOKLwlFm27_3std4hash6random11RandomStateEINtNtNtBa_6traits7col
+    10: std::rt::lang_start_internal::closure$0
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\rt.rs:175
+    11: std::panicking::catch_unwind::do_call
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\panicking.rs:581
+    12: std::panicking::catch_unwind
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\panicking.rs:544
+    13: std::panic::catch_unwind
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\panic.rs:359
+    14: std::rt::lang_start_internal
+               at /rustc/2d8144b7880597b6e6d3dfd63a9a9efae3f533d3/library\std\src\rt.rs:171
+    15: std::rt::lang_start::<()>
+    16: main
+    17: invoke_main
+               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+    18: __scrt_common_main_seh
+               at D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+    19: BaseThreadInitThunk
+    20: RtlUserThreadStart
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+warning: build failed, waiting for other jobs to finish...
