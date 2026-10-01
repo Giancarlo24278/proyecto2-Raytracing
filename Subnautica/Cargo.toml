@@ -1,0 +1,23 @@
+[package]
+name = "underwater-diorama"
+version = "0.2.0"
+edition = "2024"
+build = "build.rs"
+
+# Sin dependencias: solo la librería estándar de Rust.
+# raylib 5.5 se enlaza directamente desde vendor/raylib (ver build.rs y src/rl.rs).
+[dependencies]
+
+# Incluso `cargo run` compila optimizado: un raytracer sin optimizar es muy lento.
+[profile.dev]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+incremental = true
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
+panic = "abort"
