@@ -1,11 +1,10 @@
-# Diorama submarino con raytracing
+# Diorama subnautica con raytracing
 
-Proyecto 2 de Gráficas por Computadora: un arrecife poco profundo inspirado en
-*Subnautica*, renderizado con un **raytracer escrito desde cero en Rust** que corre
-en la CPU. Todo está hecho con figuras básicas (cubos rotados, cilindros, elipsoides
-y planos) y texturas generadas por código. Tiene fauna y flora del juego: peepers,
-bladderfish, medusas, coral de mesa, placas venosas, coral cerebro, hongos ácidos
-y pasto rojo, además de un ciclo de día y noche.
+Proyecto 2 de Gráficas por Computadora: un diorama basado en el juego *Subnautica*, 
+renderizado con un **raytracer escrito desde cero en Rust, sin librerias externas (aparte de el pop up window)** 
+que corre en la CPU. Todo está hecho con figuras básicas (cubos rotados, cilindros, elipsoides
+y planos) Esta lleno de fauna y flora del juego, como: peepers, bladderfish, medusas, 
+coral de mesa, placas venosas, coral cerebro, hongos ácidos y pasto rojo, además de un ciclo de día y noche.
 
 ![Vista frontal del arrecife](Subnautica/docs/frente.png)
 
@@ -24,8 +23,6 @@ No hace falta instalar nada más: raylib ya viene incluido en el proyecto.
 cd Subnautica
 cargo run --release
 ```
-
-La primera compilación copia `raylib.dll` junto al ejecutable automáticamente.
 
 ## Controles
 
@@ -47,11 +44,9 @@ La primera compilación copia `raylib.dll` junto al ejecutable automáticamente.
 
 ## Qué incluye (rúbrica)
 
-**Rotación y zoom.** Cámara orbital de 360° con inclinación y zoom suavizados. Si una
-formación lejana tapa la vista, la cámara se coloca frente a ella; nunca queda dentro
-de una roca.
+**Rotación y zoom.** Cámara orbital de 360° con inclinación y zoom suavizados.
 
-**Materiales (26).** Cada uno tiene su propia textura procedural y sus propios
+**Materiales (26).** Cada uno tiene su propia textura y sus propios
 parámetros de albedo, especular, transparencia y reflectividad (se imprimen al iniciar):
 
 | Material | Textura | Especular | Reflectividad | Transparencia | IOR |
@@ -84,14 +79,14 @@ parámetros de albedo, especular, transparencia y reflectividad (se imprimen al 
 | Medusa (espiral) | cinta azul-morada con puntitos | 0.40 | 0.05 | 0 | – |
 
 **Refracción con sentido en la escena.**
-- Cristales de cuarzo que salen de la arena (IOR 1.52).
-- Burbujas de aire: como el aire tiene menor índice que el agua, sus bordes hacen
+- Cristales de cuarzo que salen de la arena (como en el juego)
+- Burbujas de aire, como el aire tiene menor índice que el agua, sus bordes hacen
   reflexión interna total y se ven plateadas, igual que en la realidad.
 - La superficie del agua vista desde abajo: **ventana de Snell** (se ve el cielo solo en
   un cono) y fuera de ella **reflexión interna total** (el fondo se refleja en la superficie).
 
 **Reflexión.** La cápsula metálica refleja el arrecife; el cristal, las burbujas y el
-agua usan Fresnel (Schlick); los corales tienen un ligero brillo mojado.
+agua usan Fresnel; los corales tienen un ligero brillo mojado.
 
 **Skybox.** Dos cubemaps de 6 caras generados por código: el cielo sobre el mar
 (sol, nubes) que se ve a través de la ventana de Snell, y el fondo submarino con
@@ -144,8 +139,9 @@ placas venosas, hongos, corales cerebro) resalta más.
 
 ## Optimización
 
-La versión anterior usaba un solo hilo, probaba cada rayo contra todas las figuras y
-lanzaba rayos de reflexión en todos los materiales. Ahora:
+Normalmente cada rayo pega contra todas las figuras y
+lanza rayos de reflexión en todos los materiales. 
+Luego de optimizar
 
 - **BVH con SAH** (jerarquía de cajas): con ~12 000 figuras cada rayo prueba solo unas pocas.
 - **Multihilo** con `std::thread::scope` (usa todos los núcleos del procesador).
@@ -160,34 +156,7 @@ lanzaba rayos de reflexión en todos los materiales. Ahora:
 
 El `Cargo.toml` **no tiene dependencias**. raylib es la única librería externa y se usa
 solo para abrir la ventana, leer teclado/mouse, reproducir el audio y mostrar la
-imagen que calcula el raytracer. Se enlaza directamente a la API de C de raylib 5.5 (`src/rl.rs`) usando el
-`raylib.dll` oficial incluido en `Subnautica/vendor/raylib` (licencia zlib). Así no se
-necesita CMake ni LLVM, que es lo que pide el crate `raylib-rs` para compilar.
-
-## Estructura
-
-```
-Subnautica/
-├── build.rs               enlaza raylib y copia raylib.dll
-├── vendor/raylib/         raylib 5.5 precompilado (Windows MSVC)
-├── docs/                  capturas para este README
-└── src/
-    ├── main.rs            inicio y opciones de línea de comandos
-    ├── app.rs             bucle de la ventana, resolución dinámica y refinamiento
-    ├── input.rs           cámara orbital (rotación, inclinación, zoom)
-    ├── rl.rs              enlace mínimo con raylib
-    ├── underwater_scene.rs composición del arrecife
-    ├── fauna.rs           peepers, bladderfish y sus recorridos
-    ├── primitives.rs      cubo, esfera y cilindro orientados, recortes, vaivén
-    ├── bvh.rs             jerarquía de volúmenes
-    ├── scene.rs           escena, planos, burbujas, animales, luces
-    ├── renderer.rs        sombreado, reflexión, refracción, niebla, render paralelo
-    ├── lighting.rs        mapa de sombras, oclusión ambiental, cáusticas
-    ├── material.rs        materiales y sus texturas procedurales
-    ├── skybox.rs          cubemaps del cielo y del fondo submarino
-    ├── texture.rs         texturas, muestreo bilineal y cubemaps
-    ├── camera.rs, math.rs, noise.rs, rng.rs
-```
+imagen que calcula el raytracer. 
 
 Opciones útiles: `cargo run --release -- --shot imagen.bmp --w 1920 --h 1080 --passes 16`
 renderiza una imagen sin abrir la ventana (también acepta `--yaw`, `--pitch`, `--dist`, `--time`).
