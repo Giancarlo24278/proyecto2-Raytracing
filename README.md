@@ -12,7 +12,7 @@ coral de mesa, placas venosas, coral cerebro, hongos ácidos y pasto rojo, adem�
 |---|---|
 | ![Vista de tres cuartos](Subnautica/docs/tres_cuartos.png) | ![Contraluz con haces de luz](Subnautica/docs/contraluz.png) |
 
-> 🎥 **Video:** _(agregar aquí el enlace o el archivo del video del diorama)_
+https://youtu.be/xPHpL_cq-PA
 
 ## Cómo ejecutarlo
 
